@@ -1,8 +1,11 @@
 language: python
 
 python:
+  - 2.6
   - 2.7
-
+  - pypy
+  - pypy3
+ 
 # Mongo binds to 127.0.0.1 by default
 services:
   - couchdb
