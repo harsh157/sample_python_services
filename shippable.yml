@@ -17,6 +17,8 @@ services:
   - couchdb
   - elasticsearch
   - memcached
+  - redis
+  - rabbitmq
 
 build:
 
@@ -29,6 +31,7 @@ build:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - python elastic.py
   - python memcache.py
+  - python redis.py
 
   post_ci:
     - echo "true"
