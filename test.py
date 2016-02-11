@@ -4,13 +4,13 @@ from rabbit import Rabbit
 
 class TestSuite(unittest.TestCase):
 
-    def test(self):
+    def test_couch(self):
         couch = Couch()
         couch.populate()
         things = couch.count()
         self.failIf(things != 5)
         
-    def test(self):
+    def test_rabbit(self):
         rabbit = Rabbit()
         rabbit.sendMessage()
         things = rabbit.relayMessage()
