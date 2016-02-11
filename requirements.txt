@@ -3,3 +3,5 @@ coverage
 couchdbkit
 python-memcached
 pyes==0.99.6
+redis
+pika
