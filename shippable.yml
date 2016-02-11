@@ -16,7 +16,7 @@ env:
 services:
   - couchdb
   - elasticsearch
-  - memcache
+  - memcached
 
 build:
 
