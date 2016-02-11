@@ -31,7 +31,7 @@ build:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   - python elastic.py
   - python memcache_service.py
-  - python redis.py
+  - python redis_service.py
 
   post_ci:
     - echo "true"
