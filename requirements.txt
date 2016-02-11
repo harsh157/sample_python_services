@@ -1,4 +1,5 @@
-pyes==0.99.6
 nose
 coverage
 couchdbkit
+python-memcached
+pyes==0.99.6
